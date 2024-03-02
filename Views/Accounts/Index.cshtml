@@ -1,9 +1,11 @@
-﻿@{
+﻿@model Models.Account
+@{
     ViewData["Title"] = "Index";
 }
 
 <h1>@ViewData["Title"]</h1>
 
-<a class="btn btn-info" asp-action="Create">Cadastrar</a>
+<h2>@Html.DisplayFor(model => model.Name)</h2>
+
 
 

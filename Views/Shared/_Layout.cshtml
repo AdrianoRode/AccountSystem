@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AccountSystem.styles.css" asp-append-version="true" />
+    <style>
+        .linguica{
+            display: flex;
+            text-align: right;
+            margin: auto;
+            padding-right: 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -31,6 +39,10 @@
                     </ul>
                 </div>
             </div>
+            <div class="linguica">
+                <a class="btn btn-info mx-2" asp-area="" asp-controller="Accounts" asp-action="Register">Register</a>
+                <a class="btn btn-info" asp-area="" asp-controller="Accounts" asp-action="LogIn">Login</a>
+            </div>   
         </nav>
     </header>
     <div class="container">
