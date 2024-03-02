@@ -1,7 +1,14 @@
+using AccountSystem.Data;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+string connectionStr = "server=localhost;uid=developer;password=1234567;database=ApplicationSystemappdb";
+
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseMySql(connectionStr, ServerVersion.AutoDetect(connectionStr)));
 
 var app = builder.Build();
 

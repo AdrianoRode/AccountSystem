@@ -1,6 +1,8 @@
 ﻿using AccountSystem.Data;
 using Microsoft.AspNetCore.Mvc;
 using Models;
+using Models.ViewModel;
+using System.Diagnostics;
 
 namespace AccountSystem.Controllers
 {
@@ -35,7 +37,7 @@ namespace AccountSystem.Controllers
             var test = _context.Accounts.FirstOrDefault(x => x.Email == account.Email);
             if(test != null)
             {
-                return NotFound();
+                return RedirectToAction(nameof(Error), new {Message = "This email is already registered!"});
             }
             if(ModelState.IsValid)
             {
@@ -44,6 +46,13 @@ namespace AccountSystem.Controllers
                 return RedirectToAction(nameof(Index));
             }
             return View();
+        }
+
+        public IActionResult Error(string message)
+        {
+            var viewModel = new ErrorViewModel { Message = message, RequestId = "This email is already registered" ?? HttpContext.TraceIdentifier };
+
+            return View(viewModel);
         }
     }
 }

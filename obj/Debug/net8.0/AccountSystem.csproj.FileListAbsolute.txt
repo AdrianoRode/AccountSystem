@@ -236,3 +236,6 @@ E:\VisualStudioProjetos\Teste\AccountSystem\AccountSystem\bin\Debug\net8.0\Micro
 E:\VisualStudioProjetos\Teste\AccountSystem\AccountSystem\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
 E:\VisualStudioProjetos\Teste\AccountSystem\AccountSystem\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 E:\VisualStudioProjetos\Teste\AccountSystem\AccountSystem\bin\Debug\net8.0\Microsoft.JSInterop.dll
+E:\VisualStudioProjetos\Teste\AccountSystem\AccountSystem\bin\Debug\net8.0\MySqlConnector.dll
+E:\VisualStudioProjetos\Teste\AccountSystem\AccountSystem\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+E:\VisualStudioProjetos\Teste\AccountSystem\AccountSystem\obj\Debug\net8.0\AccountSystem.sourcelink.json
